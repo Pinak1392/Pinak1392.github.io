@@ -12,7 +12,7 @@ import Background from './Background';
 
 function App() {
   return (
-    <Router basename={`/${process.env.PUBLIC_URL}`}>
+    <Router basename='https://pinak1392.github.io/React-Resume/'>
       <Background />
       < Nav />
       <Routes>
