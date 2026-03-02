@@ -23,17 +23,17 @@ export default function Snake({size, x= Math.random() * window.innerWidth, y= Ma
     }, []);
 
 
-    if (position[0].x < -size) {
-        setPosition((prev) => [{ x: window.innerWidth + size - 1, y: prev[0].y }, ...prev.slice(0, -1)]);
+    if (position[0].x < -30) {
+        setPosition((prev) => [{ x: window.innerWidth + 30 - 1, y: prev[0].y }, ...prev.slice(0, -1)]);
     }
-    if (position[0].x > window.innerWidth + size) {
-        setPosition((prev) => [{ x: 0 - size + 1, y: prev[0].y }, ...prev.slice(0, -1)]);
+    if (position[0].x > window.innerWidth + 30) {
+        setPosition((prev) => [{ x: 0 - 30 + 1, y: prev[0].y }, ...prev.slice(0, -1)]);
     }
-    if (position[0].y < -size) {
-        setPosition((prev) => [{ x: prev[0].x, y: window.innerHeight + size - 1 }, ...prev.slice(0, -1)]);
+    if (position[0].y < -30) {
+        setPosition((prev) => [{ x: prev[0].x, y: window.innerHeight + 30 - 1 }, ...prev.slice(0, -1)]);
     }
-    if (position[0].y > window.innerHeight + size) {
-        setPosition((prev) => [{ x: prev[0].x, y: 0 - size + 1 }, ...prev.slice(0, -1)]);
+    if (position[0].y > window.innerHeight + 30) {
+        setPosition((prev) => [{ x: prev[0].x, y: 0 - 30 + 1 }, ...prev.slice(0, -1)]);
     }
 
     return (
