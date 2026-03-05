@@ -26,6 +26,18 @@ export default function Projects() {
             position: 'Pagerank TFIDF website retrieval',
             description: 'This was a group project in which we had to create a project using graph theory. We decided upon creating a page rank website retrieval feature. For this project I developed the pagerank algorithm, for which I used matrices and eigenvectors. I also developed the TF-IDF ranking of the pages. I used the two scores in order to determine page importance and reliability, along with relevance to the given search prompt. The novel aspect was the use of the Trie data structure in the TF-IDF calculation. The trie would allow the TF-IDF score to be calculated based on not only the relevant words in the search, but also give a relevance score to similar words. Also the trie data structure cut down the storage needed for page information to a fraction of the original space.',
         },
+        {
+            id: 5,
+            company: <a href='https://github.com/Pinak1392/3DPaintNSculpt'>https://github.com/Pinak1392/3DPaintNSculpt</a>,
+            position: '3D Painting and Sculpting app',
+            description: 'For my graphics subject, I had a group project to develop an app using three.js. Our group decided to develop a 3D painting and sculpting app. I was in charge of the mechanics of sculpting and painting. The sculpting and painting worked via using a kernel based on parameters defined by our brush visual scripter. The kernel would effectively stamp values onto the texture/specular/displacement maps. In order to figure out how the mouse would affect the maps, I used a reverse UV mapping.',
+        },
+        {
+            id: 6,
+            company: <a href='https://github.com/Pinak1392/React-Resume'>https://github.com/Pinak1392/React-Resume</a>,
+            position: 'This Website',
+            description: 'I created this project because I wanted to prove that I knew how to use react. While job hunting, I realised that many employers want people who know how to code front end using react. So I decided to learn how to use React and then make a project using it to show to employers. This webpage was made after learning React for 2 weeks.',
+        },
     ];
 
     return (
